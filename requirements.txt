@@ -1,3 +1,6 @@
+telebot
+joblib
+fastapi
 pandas
 scikit-learn 
 numpy
@@ -13,3 +16,4 @@ seaborn
 matplotlib
 pycaret
 statsmodels
+uvicorn

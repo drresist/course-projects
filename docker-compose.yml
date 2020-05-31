@@ -8,3 +8,10 @@ services:
       - ./:/home/jovyan/
     ports:
       - "8888:8888"
+  simple_api:
+    build: .
+    command: uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+    volumes:
+      - ./service/:/app/
+    ports:
+      - 8000:8000
